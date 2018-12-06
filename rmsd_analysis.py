@@ -3,9 +3,9 @@ import glob
 from pymol import pymol
 from pymol import cmd 
 from pymol import stored
-# import __main__
-# __main__.pymol_argv =[ 'pymol','-qc']
-# pymol.finish_launching()
+import __main__
+__main__.pymol_argv =[ 'pymol','-qc']
+pymol.finish_launching()
 
 def pdb_alignment(reference_pdb, mobile_pdb):
 	'''Align two pdb structures and returns the results'''
