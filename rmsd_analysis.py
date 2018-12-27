@@ -8,7 +8,7 @@ __main__.pymol_argv =[ 'pymol','-qc']
 pymol.finish_launching()
 
 def pdb_alignment(reference_pdb, mobile_pdb):
-	'''Align two pdb structures and returns the results of values'''
+	'''Align two pdb structures and returns the result of values'''
 	ref_name = os.path.splitext(os.path.basename(reference_pdb))[0]
 	mob_name = os.path.splitext(os.path.basename(mobile_pdb))[0]
 	cmd.load(reference_pdb)
