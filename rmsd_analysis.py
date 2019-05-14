@@ -1,8 +1,6 @@
 import os
 import glob
-from pymol import pymol
-from pymol import cmd 
-from pymol import stored
+from pymol import *
 import __main__
 __main__.pymol_argv =[ 'pymol','-qc']
 pymol.finish_launching()
